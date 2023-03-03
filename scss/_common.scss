@@ -1,0 +1,36 @@
+$primaryColor: #FFF;
+$secondaryColor: black;
+$tertriaryColor: #912DF5;
+$quaternaryColor:#8F8F8F;
+
+body {
+    font-family: "Roboto", "sans-serif";
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$screen-lg: 1300px;
+$screen-md: 930px;
+$screen-sm: 767px;
+$screen-xs: 600px;
+
+.container {
+    width:1200px;
+    max-width:90%;
+    margin:auto;
+
+    @media screen and (max-width: $screen-md) {
+        width:767px;
+    }
+
+    @media screen and (max-width: $screen-sm) {
+        width:600px;
+    }
+
+    @media screen and (max-width: $screen-xs) {
+        width:300px;
+    }
+}
+
+

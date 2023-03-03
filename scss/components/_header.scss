@@ -1,0 +1,82 @@
+.header {
+    padding: 16px 16px;
+    background-color: $secondaryColor;
+    position:fixed;
+    z-index: 99;
+    width: 100%;
+    margin: auto;
+
+    &__wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
+        display: flex;
+        gap: 16px;
+        align-items: center;
+    }
+
+    &__burger {
+        display: flex;
+        flex-direction: column;
+        gap: 4px;
+    }
+
+    &__line {
+        border: 1px solid $primaryColor;
+        width: 15px;
+    }
+
+    &__logo {
+        width: 65px;
+    }
+
+    &__form {
+        display: flex;
+        height:24px;
+    }
+
+    &__input {
+        background-color: $secondaryColor;
+        border: 1px solid #2A2A2A;
+        width: 460px;
+        outline: none;
+        color: $primaryColor;
+        text-indent: 10px;
+    }
+
+    &__button {
+        border: none;
+        padding: 0;
+    }
+
+    &__nav {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        margin-right: 32px;
+
+        a {
+            text-decoration: none;
+            color: $primaryColor;
+            font-size: 13px;
+        }
+    }
+
+    &__profile {
+        width: 26px;
+        height: 26px;
+        background-color: $tertriaryColor;
+        border-radius: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+    }
+
+    &__fix {
+        height:45px;
+    }
+}

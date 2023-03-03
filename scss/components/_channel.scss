@@ -1,0 +1,100 @@
+.channel {
+    background-color: $secondaryColor;
+
+    &__bar {
+        background-color: $tertriaryColor;
+        height: 198px;
+        width: 100%;
+    }
+
+    &__sticky {
+        position: -webkit-sticky;
+        position: sticky;
+        top: 45px;
+    }
+
+    &__top {
+        padding-top: 14px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        a {
+            text-decoration: none;
+            color: $primaryColor;
+            font-size: 11px;
+            font-weight: 500;
+            line-height: 13px;
+        }
+    }
+
+    &__top-left {
+        display: flex;
+        gap: 8px;
+        align-items: center;
+    }
+
+    &__photo {
+        width: 65px;
+        height: 65px;
+        background-color: $tertriaryColor;
+        border-radius: 50%;
+    }
+
+    &__h1 {
+        font-size: 19px;
+        font-weight: 500;
+        line-height: 22px;
+        color: $primaryColor;
+        margin-bottom: 4px;
+    }
+
+    &__h1-div {
+        display:flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    &__p1 {
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 13px;
+        color: $quaternaryColor;
+    }
+
+    &__sub-btn {
+        background-color: #B30000;
+        padding: 12px 13px 10px;
+        border-radius: 2px;
+    }
+
+    &__nav {
+        padding: 17px 0 20px;
+        display: flex;
+        gap: 54px;
+        margin-left:26px;
+    }
+
+    &__nav-links {
+        color: $quaternaryColor;
+        font-size: 11px;
+        font-weight: 500;
+        line-height: 13px;
+        text-decoration: none;
+    }
+
+    &__nav-active {
+        color: $primaryColor;
+        position:relative;
+
+        &:after {
+            content: '';
+            position: absolute;
+            width: 170%;
+            height: 2px;
+            background-color: #9A9A9A;
+            bottom: -5px;
+            left:-35%
+          }
+    }
+}

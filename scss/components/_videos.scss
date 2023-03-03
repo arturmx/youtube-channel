@@ -1,0 +1,82 @@
+.videos {
+    background-color: $secondaryColor;
+    font-weight: 500;
+
+    &__top {
+        display: flex;
+        padding-top: 42px;
+    }
+
+    &__h2 {
+        font-size: 13px;
+        font-weight: 700;
+        line-height: 15px;
+        color: $primaryColor;
+        margin-right: 30px;
+    }
+
+    &__playall {
+        font-size: 11px;
+        color: $quaternaryColor;
+        white-space: nowrap;
+        display: flex;
+        align-items: center;
+        text-decoration: none;
+        gap: 12px;
+    }
+
+    &__row {
+        margin: 20px 0 6px;
+        display: flex;
+        justify-content: space-between;
+        gap: 2px;
+    }
+
+    &__column {
+        display: flex;
+        flex-direction: column;
+
+        a {
+            text-decoration: none;
+        }
+    }
+
+    &__video {
+        height: 95px;
+        width: 169px;
+        background-color: $tertriaryColor;
+    }
+
+    &__h3 {
+        color: $primaryColor;
+        padding: 6px 0 5px;
+    }
+
+    &__p {
+        color: $quaternaryColor;
+        font-size: 10px;
+        font-weight: 500;
+        line-height: 15px;
+        display: flex;
+        gap: 6px;
+
+        img {
+            width: 11px;
+        }
+    }
+
+    &__subtitles {
+        color: $quaternaryColor;
+        padding: 2px 2px;
+        border: 1px solid #262626;
+        background-color: #262626;;
+        border-radius: 2px;
+        text-decoration: none;
+        display: inline-block;
+        margin-top: 3px;
+        font-family: Roboto;
+        font-size: 10px;
+        line-height: 15px;
+        align-self: flex-start;
+    }
+}
