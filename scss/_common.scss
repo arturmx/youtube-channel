@@ -16,6 +16,10 @@ $screen-sm: 767px;
 $screen-xs: 600px;
 
 .container {
+    overflow:visible;
+    display:block;
+    position:relative;
+    align-self: baseline;
     width:1200px;
     max-width:90%;
     margin:auto;

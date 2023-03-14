@@ -56,6 +56,10 @@ body {
 }
 
 .container {
+  overflow: visible;
+  display: block;
+  position: relative;
+  align-self: baseline;
   width: 1200px;
   max-width: 90%;
   margin: auto;
@@ -155,11 +159,6 @@ body {
   height: 198px;
   width: 100%;
 }
-.channel__sticky {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 45px;
-}
 .channel__top {
   padding-top: 14px;
   display: flex;
@@ -212,6 +211,10 @@ body {
   display: flex;
   gap: 54px;
   margin-left: 26px;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  height: auto;
 }
 .channel__nav-links {
   color: #8F8F8F;
